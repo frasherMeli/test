@@ -1,0 +1,87 @@
+    .navbar {
+        background-color: #f8f9fa; /* Updated to match palette */
+        transition: top 0.3s ease-in-out;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        color: black;
+    }
+
+    /* Class to hide navbar when scrolling past background image */
+    .navbar.hidden {
+      top: -100px;
+    }
+
+    /* Navbar brand styling */
+    .navbar-brand {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #0766AD;
+    }
+
+    /* Navbar link hover effect */
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #29ADB2;
+    }
+
+        /* Page header styling */
+    h2 {
+        font-weight: bold;
+        color: #0766AD;
+        border-bottom: 2px solid #0766AD;
+        padding-top: 50px; /* Extra padding for spacing from navbar */
+        padding-bottom: 5px;
+    }
+
+    /* "See all Remote Jobs" link */
+    .text-info {
+        color: #0766AD;
+    }
+
+    /* Company logo styling */
+    .company-logo {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+
+    /* Job title styling */
+    .job-title {
+        font-size: 1.1rem;
+        color: #0766AD;
+    }
+
+    /* Job company and type text styling */
+    .job-company {
+        color: #333;
+        font-size: 0.9rem;
+    }
+
+    /* Badge styling for job type (e.g., Full-time) */
+    .badge-success {
+        background-color: #D7E5CA;
+        color: #333;
+    }
+
+    /* Job listing item styling */
+    .list-group-item {
+        border: 2px solid #8EACCD;
+        background-color: #F9F3CC;
+        padding: 15px;
+        border-radius: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* Styling for job posting time */
+    .text-muted {
+        color: #8EACCD;
+    }
+
+  /* Footer styling */
+    footer {
+      background-color: #C5E898;
+      color: #0766AD;
+      padding: 20px 0;
+      text-align: center;
+    }

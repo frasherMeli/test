@@ -1,0 +1,231 @@
+    /* Full-screen background image */
+      .background-image {
+          background-color: #0766AD; /* Primary background color */
+          background-image: url('background_image1.jpg'); /* Replace with your image URL */
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #F3F3F3;
+          flex-direction: column;
+      }
+
+    /* Navbar Styling */
+    .navbar {
+        background-color: #f8f9fa; /* Updated to match palette */
+        transition: top 0.3s ease-in-out;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        color: black;
+    }
+
+    /* Class to hide navbar when scrolling past background image */
+    .navbar.hidden {
+      top: -100px;
+    }
+
+    /* Navbar brand styling */
+    .navbar-brand {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #0766AD;
+    }
+
+    /*Change the font of the backgroung h1 */
+    h1{
+      font-size: 5rem;
+    }
+
+    h6{
+      color: #0766AD;
+    }
+
+    /* Navbar link hover effect */
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #29ADB2;
+    }
+
+    /* Centered search bar styling */
+    .search-bar-container {
+      max-width: 800px;
+      margin-top: 20px;
+    }
+
+    /*style the search button*/
+    button[type="submit"] {
+      background-color: #0766AD; /* Updated to palette color */
+      color: #F3F3F3;
+      border-radius: 30px;
+      width: 100px;
+    }
+
+    /* Job Categories Section Header */
+    .job-categories-section h2,
+    .filter-title {
+      font-weight: bold;
+      color: #3f3d56;
+    }
+
+    /* Filter box styling */
+    .filter-jobs {
+      background-color: #F3F3F3;
+      border: 1px solid #C5E898;
+      border-radius: 8px;
+    }
+
+    /* Filter checkboxes label color */
+    .form-check-label {
+      color: #333;
+    }
+
+    /* Close button styling for filter sidebar */
+    .close-btn {
+      font-size: 1rem;
+      color: #dc3545;
+      border: none;
+    }
+
+    /* Hover effect for close button */
+    .close-btn:hover {
+      color: #b71c1c;
+    }
+
+    /* Job Card styling */
+    .job-card {
+      border: 1px solid #29ADB2;
+      padding: 22px;
+      background-color: #F3F3F3;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+    }
+
+    /* Company logo dimensions */
+    .job-image {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    /* Job title styling */
+    .job-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      color: #0766AD;
+    }
+
+    /* Job details styling */
+    .job-details {
+      color: #333;
+      font-size: 0.9em;
+    }
+
+    /* Styling for Apply and Save buttons in job card */
+    .btn-apply {
+      background-color: #0766AD;
+      color: white;
+      width: 90px;
+      border-radius: 30px;
+    }
+
+    .btn-save {
+      background-color: #C5E898;
+      color: #333;
+      border-radius: 30px;
+      width: 90px;
+    }
+
+
+    /* Testimonials Section Styling */
+    .testimonials-section {
+      background-color: #F3F3F3; /* Adjust background color to blend with surrounding sections */
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    #testimonial-container {
+      display: flex;
+      transition: transform 0.5s ease;
+      will-change: transform;
+    }
+
+    .testimonial-slide {
+      flex: 0 0 33.33%; /* Show 3 items at a time */
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .testimonial-item {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+
+    .testimonial-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #0766AD;
+      margin-right: 20px;/* Add space between image and text */
+    }
+
+    .testimonial-name {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #0766AD;
+    }
+
+    .testimonial-rating {
+      font-size: 1rem; /* Have it as 0 to hide rating stars */
+      color: #ffc107;
+    }
+
+    /* Adjust font for testimonial message */
+    .testimonial-message {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+/* All Job Categories section */
+    .all-job-categories {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+
+    .all-job-categories h2 {
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .job-category-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .job-category-list li {
+      margin-bottom: 10px;
+      position: relative;
+      font-size: 16px;
+    }
+
+    .job-category-list li a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .job-category-list li a:hover {
+      color: C5E898;
+    }
+  /* Footer styling */
+    footer {
+      background-color: #C5E898;
+      color: #0766AD;
+      padding: 20px 0;
+      text-align: center;
+    }

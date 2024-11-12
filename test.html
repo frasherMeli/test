@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoblinkAbroad</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style type="text/css">
+    /* Full-screen background image */
+    .background-image {
+      background-image: url('background_image.jpg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      flex-direction: column;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #f8f9fa;
+      transition: top 0.3s ease-in-out;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    /* Hide navbar on scroll */
+    .navbar.hidden {
+      top: -100px;
+    }
+
+    .navbar-brand {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #C30052;
+    }
+
+    /* Centered search bar styling */
+    .search-bar-container {
+      max-width: 800px;
+      margin-top: 20px;
+    }
+
+    /* Section headers and filter styling */
+    .job-categories-section h2, .filter-title {
+      font-weight: bold;
+      color: #3f3d56;
+    }
+
+    /* Filter styling */
+    .filter-jobs {
+      background-color: #f8f9fa;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+    }
+
+    /* Job Card styling */
+    .job-card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      background-color: #f7f8fa;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+    }
+
+    .job-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Job Categories section */
+    .all-job-categories {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar with links for navigation -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <span style="color: #C30052; font-weight: bold;">Joblink</span><span style="color: black;">Abroad</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-5 me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Company Review</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Sign In / Create Account</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Employer / Post a Job</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Full-screen Background Section -->
+<div class="background-image">
+  <div class="text-center">
+    <h1 class="mb-4">Find Your Dream Job</h1>
+    <div class="search-bar-container d-flex justify-content-center">
+      <form class="d-flex align-items-center">
+        <input class="form-control me-2" type="text" placeholder="Job title, skills, or keywords" aria-label="Job title">
+        <input class="form-control me-2" type="text" placeholder="Location" aria-label="Location">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content Section -->
+<div class="container my-5 job-categories-section">
+  <div class="row">
+    <div class="text-center mb-3">
+      <h2>Top Categories</h2>
+      <p class="text-muted">Browse through various job categories and find the right fit for you.</p>
+    </div>
+
+    <!-- Filter Sidebar -->
+    <div class="col-md-3">
+      <div class="filter-jobs p-3 position-relative">
+        <h5 class="filter-title">Filter Jobs</h5>
+        <button class="close-btn btn btn-link text-danger position-absolute top-0 end-0 mt-2 me-2">
+          <i class="bi bi-x-circle"></i>
+        </button>
+        <hr>
+        <!-- Contract Status Filters -->
+        <h6>Contract Status</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="fullTime">
+          <label class="form-check-label" for="fullTime">Full Time</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="partTime">
+          <label class="form-check-label" for="partTime">Part Time</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="internship">
+          <label class="form-check-label" for="internship">Internship</label>
+        </div>
+        <hr>
+        <!-- Location Status Filters -->
+        <h6>Location Status</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="onSite">
+          <label class="form-check-label" for="onSite">On-Site</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="remote">
+          <label class="form-check-label" for="remote">Remote</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hybrid">
+          <label class="form-check-label" for="hybrid">Hybrid</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Cards Section -->
+    <div class="col-md-9">
+      <div class="row g-3">
+        <!-- Job Card Template (Repeat as needed) -->
+        <div class="col-md-6 mb-4">
+          <div class="job-card">
+            <img src="category1.jpg" alt="Company Logo" class="job-image me-3">
+            <div class="flex-grow-1">
+              <div class="job-title">Senior Plumber</div>
+              <div class="job-details">Dayan Tech</div>
+              <div class="job-details">Remote</div>
+              <div class="job-details">Full Time</div>
+            </div>
+            <div class="text-right">
+              <button type="button" class="btn btn-apply mb-2">Apply</button><br>
+              <button type="button" class="btn btn-save"><i class="bi bi-bookmark"></i> Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- All Job Categories Section with Show More/Show Less functionality -->
+<div class="all-job-categories">
+  <div class="container">
+    <h2>All Job Categories</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="job-category-list categoryList">
+          <!-- Categories (Example, repeat as needed) -->
+          <li><a href="#">Accounting</a></li>
+          <li><a href="#">Administration</a></li>
+          <li><a href="#">Art & Design</a></li>
+          <!-- ...more items... -->
+        </ul>
+      </div>
+      <!-- Repeat columns as needed -->
+      <button id="toggleButton" class="btn btn-primary mt-2">Show More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="d-flex justify-content-between align-items-center p-3">
+  <p class="mb-0">&copy; 2024 JoblinkAbroad. All Rights Reserved.</p>
+  <div>
+    <a href="https://www.facebook.com" target="_blank" class="me-3">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+      <i class="bi bi-twitter"></i>
+    </a>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and custom JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+    const backgroundImage = document.querySelector(".background-image");
+    const categoryLists = document.querySelectorAll(".categoryList");
+    const toggleButton = document.getElementById("toggleButton");
+    let isExpanded = false;
+
+    // Toggle Navbar visibility on scroll
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("hidden", window.scrollY > backgroundImage.offsetHeight);
+    });
+
+    // Toggle category items visibility
+    function updateCategoryList() {
+      let itemsShown = 0;
+      categoryLists.forEach(list => {
+        Array.from(list.children).forEach(item => {
+          if (itemsShown

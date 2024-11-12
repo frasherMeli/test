@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login Page</title>
+    <!-- Bootstrap CSS for responsive design -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="container-fluid d-flex">
+        <!-- Right Panel for sign-up form (takes full width on smaller screens) -->
+        <div class="right-panel col-md-6 col-12">
+            <h3>Login to JobLinkAbroad</h3>
+            <!-- Social Media Buttons -->
+            <div class="social-buttons">
+                <button class="social-button">Google</button>
+            </div>
+            <!-- Instruction text -->
+            <p class="text-center text-muted mb-4">or use your email for registration:</p>
+            <!-- Sign-up Form -->
+            <form>
+                <input type="email" class="form-control" placeholder="Email">
+                <input type="password" class="form-control" placeholder="Password">
+                <!-- Sign Up Button -->
+                <button type="submit" class="btn-signup">Login</button>
+            </form>
+        </div>
+
+        <!-- Left Panel for login prompt (hidden on smaller screens) -->
+        <div class="left-panel col-md-6 d-none d-md-flex">
+            <!-- Logo Image -->
+            <img src="logo.png" alt="Logo" style="width: 50px; margin-bottom: 20px;">
+            <!-- Welcome Message -->
+            <h2>Hello, Friend!</h2>
+            <p>Enter your personal details and start a journey with us.</p>
+            <!-- Sign In Button -->
+            <a href="sign_up.html" class="btn-signin text-decoration-none">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

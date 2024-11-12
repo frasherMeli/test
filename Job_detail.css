@@ -1,0 +1,44 @@
+  .content-section {
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  .back-link {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  .job-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  button[type="submit"]{
+    border-radius: 30px;
+  }
+  .apply-button {
+    background-color: #333;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-weight: bold;
+  }
+  .section-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  .apply-form input[type="text"],
+  .apply-form input[type="email"],
+  .apply-form input[type="file"],
+  .apply-form textarea {
+    margin-bottom: 10px;
+  }
+  .footer-note {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+
+
+  

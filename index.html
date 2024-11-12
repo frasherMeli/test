@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoblinkAbroad</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons for icons like bookmark, geo-location, etc. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navbar with links for navigation -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid"> <!-- Use container-fluid for full-width navbar -->    <!-- Logo pushed to the far left -->
+    <a class="navbar-brand mx-auto" href="#">    
+      <span style="color: #0766AD; font-weight: bold;">JobLink</span><span style="color: #29ADB2;">Abroad</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-5 me-auto"> <!-- Adds margin-start to create separation from the logo -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Company Review</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In / Create Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Employer / Post a Job</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Full-screen Background Section with Centered Text and Search Bar -->
+<div class="background-image">
+  <div class="text-center">
+    <h1 class="mb-4">Find Your Dream Job</h1>
+    <div class="search-bar-container d-flex justify-content-center">
+      <form class="d-flex align-items-center">
+        <input class="form-control me-2" type="text" placeholder="Job title, skills, or keywords" aria-label="Job title">
+        <input class="form-control me-2" type="text" placeholder="Location" aria-label="Location">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content Section -->
+<div class="container my-5 job-categories-section">
+  <div class="row">
+    <!-- Sidebar Filter Section -->
+    <div class="text-center mb-3">
+        <h2>Top Categories</h2>
+        <p class="text-muted">Browse through various job categories and find the right fit for you.</p>
+     </div>
+    <div class="col-md-3">
+      <div class="filter-jobs p-3 position-relative">
+        <h5 class="filter-title">Filter Jobs</h5>
+        <button class="close-btn btn btn-link text-danger position-absolute top-0 end-0 mt-2 me-2">
+          <i class="bi bi-x-circle"></i>
+        </button>
+        <hr>
+        <!-- Contract Status Filters -->
+        <h6>Contract Status</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="fullTime">
+          <label class="form-check-label" for="fullTime">Full Time</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="partTime">
+          <label class="form-check-label" for="partTime">Part Time</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="internship">
+          <label class="form-check-label" for="internship">Internship</label>
+        </div>
+        <hr>
+        <!-- Location Status Filters -->
+        <h6>Location Status</h6>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="onSite">
+          <label class="form-check-label" for="onSite">On-Site</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="remote">
+          <label class="form-check-label" for="remote">Remote</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hybrid">
+          <label class="form-check-label" for="hybrid">Hybrid</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Cards Section -->
+    <div class="col-md-9">
+      <div class="row g-3">
+
+        <!-- Job Card -->
+        <div class="col-md-6 mb-4">
+          <div class="job-card d-flex align-items-center">
+            <div class="mr-3">
+              <img src="category1.png" alt="Company Logo" class="job-image">
+            </div>
+            <div class="flex-grow-1">
+              <div class="job-title">Senior Plumber</div>
+              <div class="job-details">Dayan Tech</div>
+              <div class="job-details">Remote</div>
+              <div class="job-details">Full Time</div>
+            </div>
+            <div class="button-group text-right ml-auto d-flex flex-column align-items-end">
+              <a href="./job_category.html">
+                <button type="button" class="btn btn-apply mb-2">Apply
+                </button>
+              </a>
+              <br>
+              <button type="button" class="btn btn-save"><i class="bi bi-bookmark"></i> Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="job-card d-flex align-items-center">
+            <div class="mr-3">
+              <img src="category2.png" alt="Company Logo" class="job-image">
+            </div>
+            <div class="flex-grow-1">
+              <div class="job-title">Senior Plumber</div>
+              <div class="job-details">Dayan Tech</div>
+              <div class="job-details">Remote</div>
+              <div class="job-details">Full Time</div>
+            </div>
+            <div class="button-group text-right ml-auto d-flex flex-column align-items-end">
+              <a href="./job_category.html">
+                <button type="button" class="btn btn-apply mb-2">Apply
+                </button>
+              </a>
+              <br>
+              <button type="button" class="btn btn-save"><i class="bi bi-bookmark"></i> Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="job-card d-flex align-items-center">
+            <div class="mr-3">
+              <img src="category3.png" alt="Company Logo" class="job-image">
+            </div>
+            <div class="flex-grow-1">
+              <div class="job-title">Senior Plumber</div>
+              <div class="job-details">Dayan Tech</div>
+              <div class="job-details">Remote</div>
+              <div class="job-details">Full Time</div>
+            </div>
+            <div class="button-group text-right ml-auto d-flex flex-column align-items-end">
+              <a href="./job_category.html">
+                <button type="button" class="btn btn-apply mb-2">Apply
+                </button>
+              </a>
+              <br>
+              <button type="button" class="btn btn-save"><i class="bi bi-bookmark"></i> Save</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="job-card d-flex align-items-center">
+            <div class="mr-3">
+              <img src="category4.png" alt="Company Logo" class="job-image">
+            </div>
+            <div class="flex-grow-1">
+              <div class="job-title">Senior Plumber</div>
+              <div class="job-details">Dayan Tech</div>
+              <div class="job-details">Remote</div>
+              <div class="job-details">Full Time</div>
+            </div>
+            <div class="button-group text-right ml-auto d-flex flex-column align-items-end">
+              <a href="./job_category.html">
+                <button type="button" class="btn btn-apply mb-2">Apply
+                </button>
+              </a>
+              <br>
+              <button type="button" class="btn btn-save"><i class="bi bi-bookmark"></i> Save</button>
+            </div>
+          </div>
+        </div>                  
+        
+        <!-- Additional job cards can be added here as needed -->
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="container my-5 job-categories-section">
+      <div class="row">
+        <div class="testimonials-section">
+          <h2>Testimonials</h2>
+          <div class="container">
+            <div class="row overflow-hidden" id="testimonial-container">
+              <div class="col-12 col-md-4 mb-4 testimonial-slide">
+                <div class="testimonial-item flex-column flex-md-row">
+                  <img src="review2.jfif" alt="User 1" class="testimonial-img mb-3 mb-md-0">
+                  <div>
+                    <p class="testimonial-name">STELLA LARSON</p>
+                    <p class="testimonial-rating">
+                      ★★★★★
+                      <span class="testimonial-message">(4.7/5)</span>
+                    </p>
+                    <p class="testimonial-message">"Amazing platform to find my dream job."</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-4 testimonial-slide">
+                <div class="testimonial-item flex-column flex-md-row">
+                  <img src="review4.jfif" alt="User 2" class="testimonial-img mb-3 mb-md-0">
+                  <div>
+                    <p class="testimonial-name">NICK JOHNSON</p>
+                    <p class="testimonial-rating">
+                      ★★★★★
+                      <span class="testimonial-message">(4.9/5)</span>
+                    </p>
+                    <p class="testimonial-message">"Best experience finding remote jobs."</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-4 testimonial-slide">
+                <div class="testimonial-item flex-column flex-md-row">
+                  <img src="https://www.morelogin.com/_next/static/images/user-5fd6204d76d2deff7e307d394fd6c990.png" alt="User 3" class="testimonial-img mb-3 mb-md-0">
+                  <div>
+                    <p class="testimonial-name">OLGA IVANOVA</p>
+                    <p class="testimonial-rating">
+                      ★★★★★
+                      <span class="testimonial-message">(4.8/5)</span>
+                    </p>
+                    <p class="testimonial-message">"Found the perfect job in my field!"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-4 testimonial-slide">
+                <div class="testimonial-item flex-column flex-md-row">
+                  <img src="review3.jfif" alt="User 4" class="testimonial-img mb-3 mb-md-0">
+                  <div>
+                    <p class="testimonial-name">PAUL HUDSON</p>
+                    <p class="testimonial-rating">
+                      ★★★★★
+                      <span class="testimonial-message">(4.6/5)</span>
+                    </p>
+                    <p class="testimonial-message">"Very helpful for finding tech jobs."</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more testimonials as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- All Job Categories Section -->
+<div class="all-job-categories">
+  <div class="container">
+    <h2>All Job Categories</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <ul class="job-category-list categoryList">
+            <li><a href="#">IT</a></li>
+            <li><a href="#">Finance</a></li>            
+            <li><a href="#">Banking</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Healthcare</a></li>
+            <li><a href="#">Hospitality</a></li>            
+            <li><a href="#">Accounting</a></li>           
+            <li><a href="#">Engineering</a></li>
+            <li><a href="#">Construction</a></li>   
+            <li><a href="#">Data Science</a></li>                   
+            <li><a href="#">Art & Design</a></li>
+            <li><a href="#">Administration</a></li>
+            <li><a href="#">Customer Service</a></li>           
+            <li><a href="#">Human Resources</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="job-category-list categoryList">
+            <li><a href="#">Software Development</a></li>
+            <li><a href="#">Public Relations</a></li>
+            <li><a href="#">Pharmaceutical</a></li> 
+            <li><a href="#">Manufacturing</a></li>  
+            <li><a href="#">Operations</a></li> 
+            <li><a href="#">Real Estate</a></li>  
+            <li><a href="#">Non-Profit</a></li> 
+            <li><a href="#">Marketing</a></li>    
+            <li><a href="#">Logistics</a></li>  
+            <li><a href="#">Medical</a></li>
+            <li><a href="#">Science</a></li>                        
+            <li><a href="#">Media</a></li>  
+            <li><a href="#">Retail</a></li>                                                                                                     
+            <li><a href="#">Legal</a></li>                
+            <li><a href="#">Sales</a></li>  
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="job-category-list categoryList">
+            <li><a href="#">Energy</a></li>
+            <li><a href="#">Writing</a></li>
+            <li><a href="#">Defense</a></li>                        
+            <li><a href="#">Transport</a></li>                        
+            <li><a href="#">Insurance</a></li>
+            <li><a href="#">Television</a></li>
+            <li><a href="#">Chemicals</a></li>
+            <li><a href="#">Aerospace</a></li>
+            <li><a href="#">Agriculture</a></li>
+            <li><a href="#">Supply Chain</a><li>
+            <li><a href="#">Biotechnology</a></li>
+            <li><a href="#">Environmental</a></li>
+            <li><a href="#">Travel & Tourism</a></li>
+            <li><a href="#">Law Enforcement</a></li>
+            <li><a href="#">Telecommunications</a></li>
+        </ul>
+
+        <button id="toggleButton" class="btn btn-primary mt-2">Show More</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="d-flex justify-content-between align-items-center p-3">
+  <p class="mb-0">&copy; 2024 JoblinkAbroad. All Rights Reserved.</p>
+  <div>
+    <a href="https://www.facebook.com" target="_blank" class="me-3">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+      <i class="bi bi-twitter"></i>
+    </a>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript for Hiding Navbar on Scroll -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Existing Code
+    const navbar = document.querySelector(".navbar");
+    const backgroundImage = document.querySelector(".background-image");
+    const categoryLists = document.getElementsByClassName("categoryList");
+    const toggleButton = document.getElementById("toggleButton");
+    let isExpanded = false;
+
+    // Function to handle navbar visibility on scroll
+    function handleNavbarScroll() {
+      if (window.scrollY > backgroundImage.offsetHeight) {
+        navbar.classList.add("hidden");
+      } else {
+        navbar.classList.remove("hidden");
+      }
+    }
+
+    // Function to update the visibility of category items based on screen size
+    function updateCategoryList() {
+      const isMobile = window.innerWidth < 576; // Bootstrap's breakpoint for phone size
+      let itemCount = 0; // Track the total items shown
+      let hasMoreThanTenItems = false; // Flag to check if there's more than 10 items
+
+      Array.from(categoryLists).forEach((categoryList) => {
+        Array.from(categoryList.children).forEach((li) => {
+          if (isMobile && itemCount >= 10 && !isExpanded) {
+            li.style.display = "none"; // Hide items beyond the 10th item total across lists on mobile
+            hasMoreThanTenItems = true; // Set flag if there are more items to hide
+          } else {
+            li.style.display = "list-item"; // Show items when not limited by mobile view or when expanded
+            itemCount++; // Count the displayed item
+          }
+        });
+      });
+
+      // Show the toggle button on mobile if there are more than 10 items
+      toggleButton.style.display = isMobile && hasMoreThanTenItems ? "block" : "none";
+      
+      // Update button text based on expanded state
+      toggleButton.textContent = isExpanded ? "Show Less" : "Show More";
+    }
+
+    // Event listener for "Show More"/"Show Less" button
+    toggleButton.addEventListener("click", function () {
+      isExpanded = !isExpanded; // Toggle expanded state
+      updateCategoryList(); // Refresh list visibility and button text
+    });
+
+    // Set up event listeners
+    window.addEventListener("scroll", handleNavbarScroll); // Navbar scroll effect
+    window.addEventListener("resize", updateCategoryList); // Update list on resize
+
+    // Initial setup
+    handleNavbarScroll();
+    updateCategoryList();
+
+    // New Code for Cycling Testimonials
+    const testimonials = document.querySelectorAll(".testimonial-slide");
+    let currentIndex = 0;
+    const displayCount = 3;
+
+    function showTestimonials() {
+      // Hide all testimonials
+      testimonials.forEach((testimonial) => testimonial.classList.add("d-none"));
+
+      // Show the next set of testimonials
+      for (let i = 0; i < displayCount; i++) {
+        const index = (currentIndex + i) % testimonials.length;
+        testimonials[index].classList.remove("d-none");
+      }
+
+      // Update index for the next set
+      currentIndex = (currentIndex + 1) % testimonials.length;
+    }
+
+    // Show initial testimonials
+    showTestimonials();
+
+    // Set interval for cycling through testimonials
+    setInterval(showTestimonials, 5000); // Change every 5 seconds
+  });
+</script>
+
+</body>
+</html>
